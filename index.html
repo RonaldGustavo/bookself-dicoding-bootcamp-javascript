@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bookshelf Apps - Ronald Gustavo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="head_bar">
+      <h1 class="head_bar__title">Bookshelf Apps - Ronald Gustavo</h1>
+    </header>
+    <main>
+      <section class="input_section">
+        <h2>Input New Book</h2>
+        <form id="inputBook">
+          <div class="input">
+            <label for="inputBookTitle">Book Title</label>
+            <input
+              id="inputBookTitle"
+              type="text"
+              required
+              placeholder="input title"
+            />
+          </div>
+          <div class="input">
+            <label for="inputBookAuthor">Author</label>
+            <input
+              id="inputBookAuthor"
+              type="text"
+              required
+              placeholder="input author"
+            />
+          </div>
+          <div class="input">
+            <label for="inputBookYear">Year</label>
+            <input
+              id="inputBookYear"
+              type="number"
+              required
+              placeholder="input year"
+            />
+          </div>
+          <div class="input_inline">
+            <label for="inputBookIsComplete">Already Read?</label>
+            <input id="inputBookIsComplete" type="checkbox" />
+          </div>
+          <button id="bookSubmit" type="submit">Submit New Book</button>
+        </form>
+      </section>
+
+      <section class="search_section">
+        <h2>Search Books</h2>
+        <form id="searchBook">
+          <label for="searchBookTitle">Book Title</label>
+          <input
+            id="searchBookTitle"
+            type="text"
+            placeholder="input search.."
+          />
+          <button class="btn_find">find</button>
+        </form>
+      </section>
+      <section>
+        <button class="btn_reset">Reset data</button>
+      </section>
+
+      <section class="book_shelf">
+        <h2>Not Read</h2>
+
+        <div id="incompleteBookshelfList" class="book_list"></div>
+      </section>
+
+      <section class="book_shelf">
+        <h2>Done Read</h2>
+
+        <div id="completeBookshelfList" class="book_list"></div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
