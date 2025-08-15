@@ -8,4 +8,4 @@ simple bookself app with vanilla javascript for Dicoding Course.
 
 Here is the UI:
 
-![UI Preview]()
+![UI Preview](https://github.com/RonaldGustavo/bookself-dicoding-bootcamp-javascript/blob/main/assets/image.png)
